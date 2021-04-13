@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+ html{
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ body{
+     text-align: center;
+     font-family: 'Recursive', sans-serif;
+     height: 45rem;
+     background-image: url("./images/weatherImg.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
 }
+ input{
+     border-radius: 5%;
+     font-size: 1.2rem;
+     width: 12rem;
+     font-family: 'Recursive', sans-serif;
+}
+form{
+     display: flex;
+     justify-content: center;
+}
+ label{
+     font-size: 1.25rem;
+     margin-left: 1rem;
+     font-weight: bold;
+}
+ button{
+     font-family: 'Recursive', sans-serif;
+     border-color: black;
+     border-radius: 5%;
+     max-width:10rem;
+     margin-left: 0.125rem;
+     background-color: black;
+     color: white;
+     font-size: 1.2rem;
+}
+ button:hover{
+     background-color: white;
+     color: black;
+}
+ #weatherResult{
+     width: 95%;
+     margin-top: 2rem;
+     margin-left: auto;
+     margin-right: auto;
+}
+ h1{
+}
+ @media(max-width:727px){
+     form{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+}
+ 
